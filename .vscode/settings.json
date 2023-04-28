@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "ProgUtil.jar",
+        "c:\\Users\\THO\\OneDrive - Hochschule RheinMain\\Studium\\SoSe23\\Programmieren2\\ProgUtil.jar"
+    ]
+}
