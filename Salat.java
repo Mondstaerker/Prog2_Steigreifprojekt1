@@ -1,7 +1,7 @@
 public class Salat extends Zutat{
     
-    public Salat(String name) {
-        super(name);
+    public Salat(int nummer, String name, float preis) {
+        super(nummer, name, preis, false, false, true); // Salat ist immer vegan
     }
 
 }

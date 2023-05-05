@@ -1,11 +1,10 @@
 public class Bestellliste {
     
     private Burger[] meineBurger;
-    private final int MAXIMALE_BURGER = 10;
     private int bestellteBurger;
 
     public Bestellliste() {
-        meineBurger = new Burger[MAXIMALE_BURGER];
+        meineBurger = new Burger[Burgerladen.MAXIMALE_BURGER];
         bestellteBurger = 0;
     }
 

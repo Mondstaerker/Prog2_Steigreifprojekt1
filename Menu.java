@@ -1,20 +1,32 @@
 public class Menu {
     
     private Zutat[] meineZutaten;
+    private int letzteZutat;
 
-    public Menu() {
-        meineZutaten = new Zutat[3];
-
-        meineZutaten[0] = new Broetchen("Mein Brötchen");
-        meineZutaten[1] = new Sauce("Meine Sauce");
-        meineZutaten[2] = new Bratling("Mein Bratling");
-
+    public Menu(int laenge) {
+        meineZutaten = new Zutat[18];
+        letzteZutat = 0;
     }
 
     public void menuAusgeben() {
         for (Zutat zutat : meineZutaten) {
-            System.out.println(zutat.toString());
+            if(zutat != null) {
+                System.out.println(zutat.toString());
+            }
         }
     }
+    
+    public void zutatHinzufuegen(Zutat zutat) {
+        meineZutaten[letzteZutat] = zutat;
+        letzteZutat++;
+    }
 
+    public Zutat getZutat(int nummer) {
+        for(Zutat zutat : meineZutaten) {
+            if(zutat.getNummer() == nummer) {
+                return zutat;
+            }
+        }
+        return null;
+    }
 }
