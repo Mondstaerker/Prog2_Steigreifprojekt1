@@ -8,4 +8,13 @@ public class Broetchen extends Zutat{
         this.backzeit = backzeit;
         this.hoehe = hoehe;
     }
+
+    
+    /** 
+     * @return float
+     */
+    public float berechneHoehe() {
+        return hoehe;
+    }
+
 }

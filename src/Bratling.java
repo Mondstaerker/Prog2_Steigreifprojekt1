@@ -9,4 +9,12 @@ public class Bratling extends Zutat{
         this.hoehe = hoehe;
     }
 
+    
+    /** 
+     * @return float
+     */
+    public float berechneHoehe() {
+        return hoehe;
+    }
+
 }

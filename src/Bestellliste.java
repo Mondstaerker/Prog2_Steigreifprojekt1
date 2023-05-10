@@ -1,3 +1,11 @@
+/**
+ * Verwaltung der Burger, über ein einfaches Array.
+ * Es werden folgende Manipulatoren angeboten:
+ *  - Burger Hinzufügen
+ *  - Bestellungen Ausgeben
+ *  - 
+ */
+
 public class Bestellliste {
     
     private Burger[] meineBurger;
@@ -8,6 +16,10 @@ public class Bestellliste {
         bestellteBurger = 0;
     }
 
+    
+    /** 
+     * @param burger
+     */
     public void burgerHinzufuegen(Burger burger) {
         meineBurger[bestellteBurger] = burger;
         bestellteBurger++;
@@ -17,7 +29,7 @@ public class Bestellliste {
 
         for (int i = 0; i < meineBurger.length; i++) {
             if(meineBurger[i] != null) {
-                System.out.println(i + meineBurger[i].toString());   
+                System.out.println(i + " " + meineBurger[i].toString());   
             }
         }
 

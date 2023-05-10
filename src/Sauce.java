@@ -9,4 +9,12 @@ public class Sauce extends Zutat{
         this.geschmack = geschmack;
     }
 
+    
+    /** 
+     * @return String
+     */
+    public String getGeschmack() {
+        return geschmack;
+    }
+
 }
